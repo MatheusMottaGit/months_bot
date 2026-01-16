@@ -15,6 +15,7 @@
   "type": "module",
   "devDependencies": {
     "@types/imap": "^0.8.43",
+    "@types/mailparser": "^3.4.6",
     "@types/node": "^25.0.9",
     "@types/qrcode-terminal": "^0.12.2",
     "typescript": "^5.9.3"
@@ -22,6 +23,7 @@
   "dependencies": {
     "baileys": "^7.0.0-rc.9",
     "imap": "^0.8.19",
+    "mailparser": "^3.9.1",
     "qrcode-terminal": "^0.12.0"
   }
 }

@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    volumes:
+      - ./auth:/app/auth
+    env_file:
+      - .env
+    restart: "no"
