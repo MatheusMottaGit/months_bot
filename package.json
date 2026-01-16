@@ -1,0 +1,27 @@
+{
+  "name": "months_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/imap": "^0.8.43",
+    "@types/node": "^25.0.9",
+    "@types/qrcode-terminal": "^0.12.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "baileys": "^7.0.0-rc.9",
+    "imap": "^0.8.19",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
