@@ -3,5 +3,7 @@ services:
     container_name: months_bot
     build: .
     restart: unless-stopped
+    env_file:
+      - .env
     volumes:
       - ./auth_info:/app/auth_info

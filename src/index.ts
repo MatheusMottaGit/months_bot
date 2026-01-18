@@ -3,16 +3,16 @@ import qrcode from "qrcode-terminal";
 import Imap from "imap";
 import { simpleParser } from "mailparser";
 
-const TARGET = process.env.APP_TARGET || "";
-const SENDER = process.env.APP_SENDER || "";
+const TARGET = process.env.WHATSAPP_TARGET || "";
+const SENDER = process.env.IMAP_SENDER || "";
 const MESSAGE = "20232028913102003";
 
 const imap = new Imap({
-  user: process.env.APP_USER || "",
-  password: process.env.APP_PASSWORD || "",
-  host: process.env.APP_HOST || "",
-  port: process.env.APP_PORT ? parseInt(process.env.APP_PORT) : 993,
-  tls: true,
+  user: process.env.IMAP_USER || "",
+  password: process.env.IMAP_PASSWORD || "",
+  host: process.env.IMAP_HOST || "",
+  port: process.env.IMAP_PORT ? parseInt(process.env.IMAP_PORT) : 993,
+  tls: process.env.IMAP_TLS === "true",
   tlsOptions: { rejectUnauthorized: false },
 });
 
