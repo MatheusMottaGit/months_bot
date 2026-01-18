@@ -1,12 +1,12 @@
-name: Deploy to Hostinger
+name: Deploy bot
 
-on:
+on: # quando o workflow vai ser executado e aonde (branch main)
   push:
     branches: [ main ]
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # SO
     steps:
       - uses: actions/checkout@v5
       

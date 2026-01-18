@@ -1,22 +1,7 @@
 services:
-  whatsapp-bot:
+  bot:
+    container_name: months_bot
     build: .
-    container_name: whatsapp-email-bot
     restart: unless-stopped
-    environment:
-      - APP_TARGET=${APP_TARGET}
-      - APP_SENDER=${APP_SENDER}
-      - APP_USER=${APP_USER}
-      - APP_PASSWORD=${APP_PASSWORD}
-      - APP_HOST=${APP_HOST}
-      - APP_PORT=${APP_PORT}
-      - TZ=America/Sao_Paulo
     volumes:
-      - ./auth:/app/auth
-      - ./logs:/app/logs
-    logging:
-      driver: "json-file"
-      options:
-        max-size: "10m"
-        max-file: "3"
-    network_mode: bridge
+      - ./auth_info:/app/auth_info
