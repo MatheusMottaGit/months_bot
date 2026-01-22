@@ -5,7 +5,7 @@ import { simpleParser } from "mailparser";
 
 const TARGET = process.env.WHATSAPP_TARGET || "";
 const SENDER = process.env.IMAP_SENDER || "";
-const MESSAGE = "20232028913102003";
+const MESSAGE = process.env.WHATSAPP_MESSAGE || "";
 
 const imap = new Imap({
   user: process.env.IMAP_USER || "",

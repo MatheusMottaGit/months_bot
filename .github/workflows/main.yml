@@ -15,4 +15,15 @@ jobs:
         with:
           api-key: ${{ secrets.HOSTINGER_API_KEY }}
           virtual-machine: ${{ secrets.HOSTINGER_VM_ID }}
+          project-name: months_bot
           docker-compose-path: docker-compose.yml
+          environment-variables: |
+            IMAP_HOST=${{ secrets.IMAP_HOST }}
+            IMAP_PORT=${{ secrets.IMAP_PORT }}
+            IMAP_USER=${{ secrets.IMAP_USER }}
+            IMAP_PASSWORD=${{ secrets.IMAP_PASSWORD }}
+            IMAP_SENDER=${{ secrets.IMAP_SENDER }}
+            WHATSAPP_TARGET=${{ secrets.WHATSAPP_TARGET }}
+            
+            IMAP_TLS=true
+            
