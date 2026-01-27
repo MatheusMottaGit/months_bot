@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "baileys": "^7.0.0-rc.9",
+    "dotenv": "^17.2.3",
     "imap": "^0.8.19",
     "mailparser": "^3.9.1",
     "qrcode-terminal": "^0.12.0"
