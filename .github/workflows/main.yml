@@ -24,6 +24,5 @@ jobs:
             IMAP_PASSWORD=${{ secrets.IMAP_PASSWORD }}
             IMAP_SENDER=${{ secrets.IMAP_SENDER }}
             WHATSAPP_TARGET=${{ secrets.WHATSAPP_TARGET }}
-            
             IMAP_TLS=true
             
